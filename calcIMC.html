@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calcIMC.css">
+    <title>IMC : : Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
+
+    <div class="calc">
+        <h3 class="title">O que é IMC?</h3>
+        <p align="justify">
+            IMC significa Índice de Massa Corporal, que é um indicador para medir o peso de cada pessoa.
+            A partir desse cálculo, é possível avaliar se a pessoa está no
+            peso ideal, se está abaixo do peso ou acima do peso.
+            Ambos os níveis abaixo e acima do peso corporal ideal podem
+            representar riscos para a saúde de um indivíduo.
+        </p>
+
+
+
+        <h3 class="title">Como calcular seu IMC...</h3>
+        <p align="justify">
+            Para descobrir o IMC é preciso, dividir o peso da pessoa(kg), pela altura dela ao quadrado(m).
+            <center><img src="./imgs/calcIMC.png"></center>
+        </p>
+
+        <h3 class="title" align="center">&#128071;Calcule Aqui&#128071;</h3>
+
+        <div class="boxInput">
+            <label>Informe seu peso:</label><br>
+            <input type="number" id="txtPeso" placeholder="Digite aqui...">
+        </div>
+
+
+        <div class="boxInput">
+            <label>Informe sua altura: </label><br>
+            <input type="number" id="txtAltura" placeholder="Digite aqui...">
+        </div>
+
+        <div id="btn">
+            <input type="submit" onclick="calcular()" value="Calcular" id="btnCalc">
+        </div>
+
+        <div id="res">
+
+
+        </div>
+
+        <p>
+        <h4 align="center" style="font-family:Arial, Helvetica, sans-serif;">Tabela de IMC</h4>
+        <center><img width="60%" src="./imgs/IMC.png"></center>
+        </p>
+
+    </div>
+
+<footer>&copy;AnthonyEncarnação</footer>
+</body>
+<script src="./js/calcIMC.js"></script>
+
+</html>
